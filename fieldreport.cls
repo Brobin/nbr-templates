@@ -895,8 +895,12 @@ BoldItalicFont  = Carlito-BoldItalic.ttf
 \def\corau#1{\gdef\@corau{\corresfont{\bfseries Correspondence to:} #1\par}}\corau{}
 
 \def\affil[#1]#2{%#3
-\expandafter\protected@xdef\csname affil\the\affilcount\endcsname{\raisebox{3pt}{\fontsize{6.5}{6.5}\selectfont#1}#2{\affsemicolon}}% .\kern3pt#2\ifx#3\@empty\else#3\fi
+\expandafter\protected@xdef\csname affil\the\affilcount\endcsname{\raisebox{3pt}{\fontsize{6.5}{6.5}\selectfont#1}\href{mailto:#2}{#2}{\affsemicolon}}% .\kern3pt#2\ifx#3\@empty\else#3\fi
 \global\advance\affilcount1}%
+
+\def\lastaffil[#1]#2{%#3
+	\expandafter\protected@xdef\csname affil\the\affilcount\endcsname{\raisebox{3pt}{\fontsize{6.5}{6.5}\selectfont#1}\href{mailto:#2}{#2}}% .\kern3pt#2\ifx#3\@empty\else#3\fi
+	\global\advance\affilcount1}%
 
 \def\printaffil{\par%
 %\footnotetext{%
