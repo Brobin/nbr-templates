@@ -1,0 +1,808 @@
+%!TEX program = lualatex
+
+%\documentclass[OA,linenum,doublespace]{InterPore}
+%\documentclass[OA,linenum,suppleart]{InterPore}
+%\documentclass[OA,linenum,suppleart,CCBY]{InterPore}
+%\documentclass[OA,linenum,CCBY]{InterPore}
+%\documentclass[OA,linenum]{nbr_article}
+\documentclass[OA]{fieldreport}
+
+\artcategory{Field Reports}
+
+%%% For Regional Reports
+
+\newcommand{\rr}{Routine reports.}
+\newcommand{\spp}[3]{\hangindent=0.7cm \textbf{#1 \textit{(#2)}}: #3\par}
+\newcommand{\order}[1]{\subsection*{Order: \text{#1}} \vskip0.2cm}
+\newcommand{\family}[1]{\subsubsection*{Family: \text{#1}} \vskip0.2cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% The following information will be updated by the Editorial Office %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vol{0}
+\iss{0}
+\cpyear{2026 Under Review} 
+\doi{00.0000/000000000}
+%\recdate{00 Month 0000}
+%\accdate{01 Month 0000}
+%\pubdate{02 Month 0000}
+\rhauthor{SEASON Field Report MONTH\textendash MONTH 20XX}
+\citethisarticle{This information will be updated by the Editorial Office once the article is ready to be published. \url{https://doi.org/10.69631/xxxxxxx}}
+
+% Optional:
+% \CCbystatement{Creative Commons Attribution 4.0 International license (CC BY 4.0 Deed) \url{https://creativecommons.org/licenses/by/4.0/}}
+% \CPstatement{© \the\year\ Customized\newline CP statement}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                     End Editorial Office                          %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\graphicspath{
+	{./logo/}
+}
+
+\noabstracttrue
+
+\begin{document}
+	
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%                     Begin author content                          %%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\title{SEASON Field Report \\ MONTH\textendash MONTH 20XX}
+	
+	\author[1]{Tobin J. Brown}
+	\author[2]{W. Ross Silcock}
+	
+	\affil[1]{tobinjbrown@gmail.com}
+	\affil[2]{silcock@rosssilcock.com}
+	
+	\maketitle
+	
+	\section*{Introduction}
+	
+	\lipsum[1]
+	
+	\section*{Abbreviations}
+	
+	\begin{tabular}{l l}
+		\textbf{LM} = Lake McConaughy, \textit{Keith} &
+		\textbf{LO} = Lake Ogallala, \textit{Keith} \\
+		\textbf{m. obs.} = multiple observers &
+		\textbf{NOURC} = NOU Records Committee \\
+		\textbf{RA} = Recreation Area &
+		\textbf{SP} = State Park \\
+		\textbf{SRA} = State Recreation Area &
+		\textbf{WMA} = Wildlife Management Area \\
+		\textbf{WTP} = Water Treatment Plant &
+	\end{tabular}
+	
+	\subsection*{Observers}
+	
+	Observer names are included in the species accounts in full except for those observers with $\ge 8$ citations; observer abbreviations are as follows:
+	
+	\begin{tabular}{l l l}
+		\textbf{TB} = Tobin Brown & \textbf{PP} = Paul Pearson & \textbf{JCC} = Jacob C. Cooper \\
+		\textbf{JGJ} = Joel G. Jorgensen & \textbf{KB} = Keegan Brown & \textbf{CBM} = Cody B. McGregor \\
+	\end{tabular}
+	
+	\section*{Species Accounts}
+	\vskip0.2cm
+	
+	%%%%%%%%%%%%%%%%% LIST OF SPECIES IN NEBRASKA %%%%%%%%%%%%%%%%%%%%%%
+	
+	\order{Anseriformes}
+	
+	\family{Anatidae}
+	
+	% \spp{Black-bellied Whistling-Duck}{Dendrocygna autumnalis}{\rr}
+	% \spp{Fulvous Whistling-Duck}{Dendrocygna bicolor}{\rr}
+	% \spp{Emperor Goose}{Anser canagicus}{\rr}
+	\spp{Snow Goose}{Anser caerulescens}{\rr}
+	\spp{Ross's Goose}{Anser rossii}{\rr}
+	\spp{Greater White-fronted Goose}{Anser albifrons}{\rr}
+	% \spp{Taiga Bean-Goose}{Anser fabalis}{\rr}
+	% \spp{Pink-footed Goose}{Anser brachyrhynchus}{\rr}
+	% \spp{Brant}{Branta bernicla}{\rr}
+	\spp{Cackling Goose}{Branta hutchinsii}{\rr}
+	\spp{Canada Goose}{Branta canadensis}{\rr}
+	% \spp{Mute Swan}{Cygnus olor}{\rr}
+	\spp{Trumpeter Swan}{Cygnus buccinator}{\rr}
+	\spp{Tundra Swan}{Cygnus columbianus}{\rr}
+	\spp{Wood Duck}{Aix sponsa}{\rr}
+	% \spp{Garganey}{Spatula querquedula}{\rr}
+	\spp{Blue-winged Teal}{Spatula discors}{\rr}
+	\spp{Cinnamon Teal}{Spatula cyanoptera}{\rr}
+	\spp{Northern Shoveler}{Spatula clypeata}{\rr}
+	\spp{Gadwall}{Mareca strepera}{\rr}
+	% \spp{Eurasian Wigeon}{Mareca penelope}{\rr}
+	\spp{American Wigeon}{Mareca americana}{\rr}
+	\spp{Mallard}{Anas platyrhynchos}{\rr}
+	% \spp{Mexican Duck}{Anas diazi}{\rr}
+	% \spp{American Black Duck}{Anas rubripes}{\rr}
+	% \spp{Mottled Duck}{Anas fulvigula}{\rr}
+	\spp{Northern Pintail}{Anas acuta}{\rr}
+	\spp{Green-winged Teal}{Anas crecca}{\rr}
+	\spp{Canvasback}{Aythya valisineria}{\rr}
+	\spp{Redhead}{Aythya americana}{\rr}
+	\spp{Ring-necked Duck}{Aythya collaris}{\rr}
+	% \spp{Tufted Duck}{Aythya fuligula}{\rr}
+	\spp{Greater Scaup}{Aythya marila}{\rr}
+	\spp{Lesser Scaup}{Aythya affinis}{\rr}
+	% \spp{King Eider}{Somateria spectabilis}{\rr}
+	% \spp{Common Eider}{Somateria mollissima}{\rr}
+	% \spp{Harlequin Duck}{Histrionicus histrionicus}{\rr}
+	\spp{Surf Scoter}{Melanitta perspicillata}{\rr}
+	\spp{White-winged Scoter}{Melanitta deglandi}{\rr}
+	\spp{Black Scoter}{Melanitta americana}{\rr}
+	\spp{Long-tailed Duck}{Clangula hyemalis}{\rr}
+	\spp{Bufflehead}{Bucephala albeola}{\rr}
+	\spp{Common Goldeneye}{Bucephala clangula}{\rr}
+	% \spp{Barrow's Goldeneye}{Bucephala islandica}{\rr}
+	\spp{Hooded Merganser}{Lophodytes cucullatus}{\rr}
+	\spp{Common Merganser}{Mergus merganser}{\rr}
+	\spp{Red-breasted Merganser}{Mergus serrator}{\rr}
+	\spp{Ruddy Duck}{Oxyura jamaicensis}{\rr}
+
+	\order{Galliformes}
+	
+	\family{Odontophoridae}
+
+	\spp{Northern Bobwhite}{Colinus virginianus}{\rr}
+
+	\family{Phasianidae}
+
+	\spp{Wild Turkey}{Meleagris gallopavo}{\rr}
+	% \spp{Ruffed Grouse}{Bonasa umbellus}{\rr}
+	% \spp{Greater Sage-Grouse}{Centrocercus urophasianus}{\rr}
+	\spp{Sharp-tailed Grouse}{Tympanuchus phasianellus}{\rr}
+	\spp{Greater Prairie-Chicken}{Tympanuchus cupido}{\rr}
+	% \spp{Lesser Prairie-Chicken}{Tympanuchus pallidicinctus}{\rr}
+	\spp{Gray Partridge}{Perdix perdix}{\rr}
+	\spp{Ring-necked Pheasant}{Phasianus colchicus}{\rr}
+
+	\order{Podicipediformes}
+
+	\family{Podicipedidae}
+
+	\spp{Pied-billed Grebe}{Podilymbus podiceps}{\rr}
+	\spp{Horned Grebe}{Podiceps auritus}{\rr}
+	\spp{Red-necked Grebe}{Podiceps grisegena}{\rr}
+	\spp{Eared Grebe}{Podiceps nigricollis}{\rr}
+	\spp{Western Grebe}{Aechmophorus occidentalis}{\rr}
+	\spp{Clark's Grebe}{Aechmophorus clarkii}{\rr}
+
+	\order{Columbiformes}
+
+	% \family{Calravinae}
+
+	% \spp{Inca Dove}{Columbina inca}{\rr}
+	% \spp{Common Ground Dove}{Columbina passerina}{\rr}
+
+	\family{Columbidae}
+
+	\spp{White-winged Dove}{Zenaida asiatica}{\rr}
+	\spp{Mourning Dove}{Zenaida macroura}{\rr}
+	% \spp{Passenger Pigeon}{Ectopistes migratorius}{\rr}
+	% \spp{Band-tailed Pigeon}{Patagioenas fasciata}{\rr}
+	\spp{Eurasian Collared-Dove}{Streptopelia decaocto}{\rr}
+	\spp{Rock Pigeon}{Columba livia}{\rr}
+
+	\order{Cuciliformes}
+
+	\family{Cucilidae}
+
+	% \spp{Groove-billed Ani}{Crotophaga sulcirostris}{\rr}
+	\spp{Yellow-billed Cuckoo}{Coccyzus americanus}{\rr}
+	\spp{Black-billed Cuckoo}{Coccyzus erythropthalmus}{\rr}
+
+	\order{Caprimulgiformes}
+
+	\family{Caprimulgidae}
+
+	\spp{Common Nighthawk}{Chordeiles minor}{\rr}
+	\spp{Common Poorwill}{Phalaenoptilus nuttallii}{\rr}
+	\spp{Chuck-will's-widow}{Antrostomus carolinensis}{\rr}
+	\spp{Eastern Whip-poor-will}{Antrostomus vociferus}{\rr}
+
+	\order{Apodiformes}
+
+	\family{Apodidae}
+
+	\spp{Chimney Swift}{Chaetura pelagica}{\rr}
+	\spp{White-throated Swift}{Aeronautes saxatalis}{\rr}
+
+	\family{Trochilidae}
+	
+	\spp{Ruby-throated Hummingbird}{Archilochus colubris}{\rr}
+	\spp{Black-chinned Hummingbird}{Archilochus alexandri}{\rr}
+	% \spp{Anna's Hummingbird}{Calypte anna}{\rr}
+	% \spp{Costa's Hummingbird}{Calypte costae}{\rr}
+	\spp{Calliope Hummingbird}{Selasphorus calliope}{\rr}
+	\spp{Rufous Hummingbird}{Selasphorus rufus}{\rr}
+	\spp{Broad-tailed Hummingbird}{Selasphorus platycercus}{\rr}
+	% \spp{Broad-billed Hummingbird}{Cynanthus latirostris}{\rr}
+
+	\order{Gruiformes}
+
+	% \family{Aramidae}
+
+	% \spp{Limpkin}{Aramus guarauna}{\rr}
+
+	\family{Gruidae}
+
+	\spp{Sandhill Crane}{Antigone canadensis}{\rr}
+	% \spp{Common Crane}{Grus grus}{\rr}
+	% \spp{Hooded Crane}{Grus monacha}{\rr}
+	\spp{Whooping Crane}{Grus americana}{\rr}
+
+	\family{Rallidae}
+
+	% \spp{King Rail}{Rallus elegans}{\rr}
+	% \spp{Clapper Rail}{Rallus crepitans}{\rr}
+	\spp{Virginia Rail}{Rallus limicola}{\rr}
+	\spp{Sora}{Porzana carolina}{\rr}
+	% \spp{Common Gallinule}{Gallinula galeata}{\rr}
+	\spp{American Coot}{Fulica americana}{\rr}
+	% \spp{Purple Gallinule}{Porphyrio martinicus}{\rr}
+	% \spp{Yellow Rail}{Coturnicops noveboracensis}{\rr}
+	% \spp{Black Rail}{Laterallus jamaicensis}{\rr}
+
+	\order{Charadiformes}
+
+	\family{Recurvirostridae}
+
+	\spp{Black-necked Stilt}{Himantopus mexicanus}{\rr}
+
+	\spp{American Avocet}{Recurvirostra americana}{\rr}
+
+	\family{Charadriidae}
+
+	\spp{Black-bellied Plover}{Pluvialis squatarola}{\rr}
+
+	\spp{American Golden-Plover}{Pluvialis dominica}{\rr}
+
+	\spp{Killdeer}{Charadrius vociferus}{\rr}
+
+	\spp{Semipalmated Plover}{Charadrius semipalmatus}{\rr}
+
+	\spp{Piping Plover}{Charadrius melodus}{\rr}
+
+	\spp{Mountain Plover}{Anarhynchus montanus}{\rr}
+
+	\spp{Snowy Plover}{Anarhynchus nivosus}{\rr}
+
+	\family{Scolopacidae}
+
+	\spp{Upland Sandpiper}{Bartramia longicauda}{\rr}
+	\spp{Hundsonian Whimbrel}{Numenius hudsonicus}{\rr}
+	% \spp{Eskimo Curlew}{Numenius borealis}{\rr}
+	\spp{Long-billed Curlew}{Numenius americanus}{\rr}
+	\spp{Hudsonian Godwit}{Limosa haemastica}{\rr}
+	\spp{Marbled Godwit}{Limosa fedoa}{\rr}
+	\spp{Ruddy Turnstone}{Arenaria interpres}{\rr}
+	% \spp{Red Knot}{Calidris canutus}{\rr}
+	% \spp{Ruff}{Calidris pugnax}{\rr}
+	% \spp{Sharp-tailed Sandpiper}{Calidris acuminata}{\rr}
+	\spp{Stilt Sandpiper}{Calidris himantopus}{\rr}
+	% \spp{Curlew Sandpiper}{Calidris ferruginea}{\rr}
+	\spp{Sanderling}{Calidris alba}{\rr}
+	\spp{Dunlin}{Calidris alpina}{\rr}
+	\spp{Baird's Sandpiper}{Calidris bairdii}{\rr}
+	\spp{Least Sandpiper}{Calidris minutilla}{\rr}
+	\spp{White-rumped Sandpiper}{Calidris fuscicollis}{\rr}
+	\spp{Buff-breasted Sandpiper}{Calidris subruficollis}{\rr}
+	\spp{Pectoral Sandpiper}{Calidris melanotos}{\rr}
+	\spp{Semipalmated Sandpiper}{Calidris pusilla}{\rr}
+	\spp{Western Sandpiper}{Calidris mauri}{\rr}
+	\spp{Short-billed Dowitcher}{Limnodromus griseus}{\rr}
+	\spp{Long-billed Dowitcher}{Limnodromus scolopaceus}{\rr}
+	\spp{American Woodcock}{Scolopax minor}{\rr}
+	\spp{Wilson's Snipe}{Gallinago delicata}{\rr}
+	\spp{Spotted Sandpiper}{Actitis macularius}{\rr}
+	\spp{Solitary Sandpiper}{Tringa solitaria}{\rr}
+	\spp{Lesser Yellowlegs}{Tringa flavipes}{\rr}
+	\spp{Willet}{Tringa semipalmata}{\rr}
+	\spp{Greater Yellowlegs}{Tringa melanoleuca}{\rr}
+	\spp{Wilson's Phalarope}{Phalaropus tricolor}{\rr}
+	\spp{Red-necked Phalarope}{Phalaropus lobatus}{\rr}
+	% \spp{Red Phalarope}{Phalaropus fulicarius}{\rr}
+
+	% \family{Stercoraridae}
+
+	% \spp{Pomarine Jaeger}{Stercorarius pomarinus}{\rr}
+	% \spp{Parasitic Jaeger}{Stercorarius parasiticus}{\rr}
+	% \spp{Long-tailed Jaeger}{Stercorarius longicaudus}{\rr}
+
+	% \family{Alcidae}
+
+	% \spp{Ancient Murrelet}{Synthliboramphus antiquus}{\rr}
+
+	\family{Laridae}
+
+	\spp{Least Tern}{Sternula antillarum}{\rr}
+	\spp{Caspian Tern}{Hydroprogne caspia}{\rr}
+	\spp{Black Tern}{Chlidonias niger}{\rr}
+	\spp{Common Tern}{Sterna hirundo}{\rr}
+	% \spp{Arctic Tern}{Sterna paradisaea}{\rr}
+	\spp{Forster's Tern}{Sterna forsteri}{\rr}
+	% \spp{Royal Tern}{Thalasseus maximus}{\rr}
+	% \spp{Black-legged Kittiwake}{Rissa tridactyla}{\rr}
+	\spp{Sabine's Gull}{Xema sabini}{\rr}
+	\spp{Bonaparte's Gull}{Chroicocephalus philadelphia}{\rr}
+	% \spp{Black-headed Gull}{Chroicocephalus ridibundus}{\rr}
+	% \spp{Little Gull}{Hydrocoloeus minutus}{\rr}
+	% \spp{Ross's Gull}{Rhodostethia rosea}{\rr}
+	\spp{Laughing Gull}{Leucophaeus atricilla}{\rr}
+	\spp{Franklin's Gull}{Leucophaeus pipixcan}{\rr}
+	\spp{Short-billed Gull}{Larus brachyrhynchus}{\rr}
+	\spp{Ring-billed Gull}{Larus delawarensis}{\rr}
+	% \spp{Western Gull}{Larus occidentalis}{\rr}
+	\spp{California Gull}{Larus californicus}{\rr}
+	\spp{Herring Gull}{Larus argentatus}{\rr}
+	\spp{Iceland Gull}{Larus glaucoides}{\rr}
+	\spp{Lesser Black-backed Gull}{Larus fuscus}{\rr}
+	% \spp{Glaucous-winged Gull}{Larus glaucescens}{\rr}
+	\spp{Glaucous Gull}{Larus hyperboreus}{\rr}
+	% \spp{Great Black-backed Gull}{Larus marinus}{\rr}
+
+	\order{Gaviformes}
+
+	\family{Gaviidae}
+
+	% \spp{Red-throated Loon}{Gavia stellata}{\rr}
+	% \spp{Pacific Loon}{Gavia pacifica}{\rr}
+	\spp{Common Loon}{Gavia immer}{\rr}
+
+	% \spp{Yellow-billed Loon}{Gavia adamsii}{\rr}
+
+	% \order{Ciconiformes}
+	% \family{Ciconiidae}
+	% \spp{Wood Stork}{Mycteria americana}{\rr}
+
+	% \order{Suliformes}
+	% \family{Fregatidae}
+	% \spp{Magnificent Frigatebird}{Fregata magnificens}{\rr}
+	% \family{Sulidae}
+	% \spp{Brown Booby}{Sula leucogaster}{\rr}
+
+	% \family{Anhingidae}
+	% \spp{Anhinga}{Anhinga anhinga}{\rr}
+
+	\family{Phalacrocoracidae}
+
+	\spp{Double-crested Cormorant}{Nannopterum auritum}{\rr}
+	% \spp{Neotropic Cormorant}{Nannopterum brasilianum}{\rr}
+
+	\order{Pelicaniformes}
+
+	\family{Threskiornithidae}
+
+	% \spp{White Ibis}{Eudocimus albus}{\rr}
+	% \spp{Glossy Ibis}{Plegadis falcinellus}{\rr}
+	\spp{White-faced Ibis}{Plegadis chihi}{\rr}
+	% \spp{Roseate Spoonbill}{Platalea ajaja}{\rr}
+
+	\family{Pelecanidae}
+
+	\spp{American White Pelican}{Pelecanus erythrorhynchos}{\rr}
+	% \spp{Brown Pelican}{Pelecanus occidentalis}{\rr}
+
+	\family{Ardeaidae}	
+
+	\spp{Least Bittern}{Botaurus exilis}{\rr}
+	\spp{American Bittern}{Botaurus lentiginosus}{\rr}
+	% \spp{Little Blue Heron}{Egretta caerulea}{\rr}
+	% \spp{Tricolored Heron}{Egretta tricolor}{\rr}
+	% \spp{Reddish Egret}{Egretta rufescens}{\rr}
+	\spp{Snowy Egret}{Egretta thula}{\rr}
+	% \spp{Yellow-crowned Night Heron}{Nyctanassa violacea}{\rr}
+	\spp{Black-crowned Night Heron}{Nycticorax nycticorax}{\rr}
+	\spp{Green Heron}{Butorides virescens}{\rr}
+	\spp{Great Egret}{Ardea alba}{\rr}
+	\spp{Western Cattle Egret}{Ardea ibis}{\rr}
+	\spp{Great Blue Heron}{Ardea herodias}{\rr}
+
+	\order{Cathartiformes}
+
+	\family{Cathartidae}
+
+	% \spp{Black Vulture}{Coragyps atratus}{\rr}
+	\spp{Turkey Vulture}{Cathartes aura}{\rr}
+
+	\order{Acciptriformes}
+
+	\family{Pandionidae}
+
+	\spp{Osprey}{Pandion haliaetus}{\rr}
+
+	\family{Acciptridae}
+
+	% \spp{White-tailed Kite}{Elanus leucurus}{\rr}
+	% \spp{Swallow-tailed Kite}{Elanoides forficatus}{\rr}
+	\spp{Golden Eagle}{Aquila chrysaetos}{\rr}
+	\spp{Northern Harrier}{Circus hudsonius}{\rr}
+	\spp{Sharp-shinned Hawk}{Accipiter striatus}{\rr}
+	\spp{Cooper's Hawk}{Accipiter cooperii}{\rr}
+	\spp{American Goshawk}{Accipiter atricapillus}{\rr}
+	\spp{Bald Eagle}{Haliaeetus leucocephalus}{\rr}
+	\spp{Mississippi Kite}{Ictinia mississippiensis}{\rr}
+	% \spp{Harris's Hawk}{Parabuteo unicinctus}{\rr}
+	\spp{Red-shouldered Hawk}{Buteo lineatus}{\rr}
+	\spp{Broad-winged Hawk}{Buteo platypterus}{\rr}
+	\spp{Swainson's Hawk}{Buteo swainsoni}{\rr}
+	% \spp{Zone-tailed Hawk}{Buteo albonotatus}{\rr}
+	\spp{Red-tailed Hawk}{Buteo jamaicensis}{\rr}
+	\spp{Rough-legged Hawk}{Buteo lagopus}{\rr}
+	\spp{Ferruginous Hawk}{Buteo regalis}{\rr}
+
+	\order{Strigiformes}
+
+	\family{Tytonidae}
+
+	\spp{American Barn Owl}{Tyto alba}{\rr}
+
+	\family{Strigidae}
+
+	\spp{Eastern Screech-Owl}{Megascops asio}{\rr}
+	\spp{Great Horned Owl}{Bubo virginianus}{\rr}
+	\spp{Snowy Owl}{Bubo scandiacus}{\rr}
+	% \spp{Northern Hawk Owl}{Surnia ulula}{\rr}
+	\spp{Burrowing Owl}{Athene cunicularia}{\rr}
+	\spp{Barred Owl}{Strix varia}{\rr}
+	% \spp{Great Gray Owl}{Strix nebulosa}{\rr}
+	\spp{Long-eared Owl}{Asio otus}{\rr}
+	\spp{Short-eared Owl}{Asio flammeus}{\rr}
+	% \spp{Boreal Owl}{Aegolius funereus}{\rr}
+	\spp{Northern Saw-whet Owl}{Aegolius acadicus}{\rr}
+
+	\order{Coraciiformes}
+
+	\family{Alcedinidae}
+
+	\spp{Belted Kingfisher}{Megaceryle alcyon}{\rr}
+
+	\order{Piciformes}
+
+	\family{Picidae}
+
+	\spp{Lewis's Woodpecker}{Melanerpes lewis}{\rr}
+	\spp{Red-headed Woodpecker}{Melanerpes erythrocephalus}{\rr}
+	% \spp{Acorn Woodpecker}{Melanerpes formicivorus}{\rr}
+	\spp{Red-bellied Woodpecker}{Melanerpes carolinus}{\rr}
+	% \spp{Williamson's Sapsucker}{Sphyrapicus thyroideus}{\rr}
+	\spp{Yellow-bellied Sapsucker}{Sphyrapicus varius}{\rr}
+	% \spp{Red-naped Sapsucker}{Sphyrapicus nuchalis}{\rr}
+	% \spp{American Three-toed Woodpecker}{Picoides dorsalis}{\rr}
+	\spp{Downy Woodpecker}{Dryobates pubescens}{\rr}
+	\spp{Hairy Woodpecker}{Leuconotopicus villosus}{\rr}
+	\spp{Northern Flicker}{Colaptes auratus}{\rr}
+	\spp{Pileated Woodpecker}{Dryocopus pileatus}{\rr}
+
+	\order{Falconiformes}
+
+	\family{Falconidae}
+
+	% \spp{Crested Caracara}{Caracara plancus}{\rr}
+	\spp{American Kestrel}{Falco sparverius}{\rr}
+	\spp{Merlin}{Falco columbarius}{\rr}
+	% \spp{Gyrfalcon}{Falco rusticolus}{\rr}
+	\spp{Peregrine Falcon}{Falco peregrinus}{\rr}
+	\spp{Prairie Falcon}{Falco mexicanus}{\rr}
+
+	% \order Psittaciformes
+	% \family{Psittacidae}
+	% \spp{Carolina Parakeet}{Conuropsis carolinensis}{\rr}
+	
+	\order{Passeriformes}
+
+	\family{Tyrannidae}
+
+	% \spp{Ash-throated Flycatcher}{Myiarchus cinerascens}{\rr}
+	\spp{Great Crested Flycatcher}{Myiarchus crinitus}{\rr}
+	% \spp{Great Kiskadee}{Pitangus sulphuratus}{\rr}
+	% \spp{Couch's Kingbird}{Tyrannus couchii}{\rr}
+	\spp{Cassin's Kingbird}{Tyrannus vociferans}{\rr}
+	\spp{Western Kingbird}{Tyrannus verticalis}{\rr}
+	\spp{Eastern Kingbird}{Tyrannus tyrannus}{\rr}
+	\spp{Scissor-tailed Flycatcher}{Tyrannus forficatus}{\rr}
+	\spp{Olive-sided Flycatcher}{Contopus cooperi}{\rr}
+	\spp{Western Wood-Pewee}{Contopus sordidulus}{\rr}
+	\spp{Eastern Wood-Pewee}{Contopus virens}{\rr}
+	\spp{Yellow-bellied Flycatcher}{Empidonax flaviventris}{\rr}
+	\spp{Acadian Flycatcher}{Empidonax virescens}{\rr}
+	\spp{Alder Flycatcher}{Empidonax alnorum}{\rr}
+	\spp{Willow Flycatcher}{Empidonax traillii}{\rr}
+	\spp{Least Flycatcher}{Empidonax minimus}{\rr}
+	\spp{Hammond's Flycatcher}{Empidonax hammondii}{\rr}
+	% \spp{Gray Flycatcher}{Empidonax wrightii}{\rr}
+	% \spp{Dusky Flycatcher}{Empidonax oberholseri}{\rr}
+	\spp{Western Flycatcher}{Empidonax difficilis}{\rr}
+	% \spp{Black Phoebe}{Sayornis nigricans}{\rr}
+	\spp{Eastern Phoebe}{Sayornis phoebe}{\rr}
+	\spp{Say's Phoebe}{Sayornis saya}{\rr}
+	% \spp{Vermilion Flycatcher}{Pyrocephalus rubinus}{\rr}
+
+	\family{Vireonidae}
+
+	% \spp{Black-capped Vireo}{Vireo atricapilla}{\rr}
+
+	% \spp{White-eyed Vireo}{Vireo griseus}{\rr}
+
+	\spp{Bell's Vireo}{Vireo bellii}{\rr}
+	\spp{Yellow-throated Vireo}{Vireo flavifrons}{\rr}
+	\spp{Cassin's Vireo}{Vireo cassinii}{\rr}
+	\spp{Blue-headed Vireo}{Vireo solitarius}{\rr}
+	\spp{Plumbeous Vireo}{Vireo plumbeus}{\rr}
+	\spp{Philadelphia Vireo}{Vireo philadelphicus}{\rr}
+	\spp{Eastern Warbling-Vireo}{Vireo gilvus}{\rr}
+	\spp{Western Warbling-Vireo}{Vireo swainsoni}{\rr}
+	\spp{Red-eyed Vireo}{Vireo olivaceus}{\rr}
+
+	\family{Laniidae}
+
+	\spp{Loggerhead Shrike}{Lanius ludovicianus}{\rr}
+	\spp{Northern Shrike}{Lanius borealis}{\rr}
+
+	\family{Corvidae}
+
+	% \spp{Canada Jay}{Perisoreus canadensis}{\rr}
+	% \spp{Pinyon Jay}{Gymnorhinus cyanocephalus}{\rr}
+	% \spp{Steller's Jay}{Cyanocitta stelleri}{\rr}
+	\spp{Blue Jay}{Cyanocitta cristata}{\rr}
+	% \spp{Clark's Nutcracker}{Nucifraga columbiana}{\rr}
+	\spp{Black-billed Magpie}{Pica hudsonia}{\rr}
+	\spp{American Crow}{Corvus brachyrhynchos}{\rr}
+	% \spp{Fish Crow}{Corvus ossifragus}{\rr}
+	% \spp{Chihuahuan Raven}{Corvus cryptoleucus}{\rr}
+	% \spp{Common Raven}{Corvus corax}{\rr}
+
+	\family{Paridae}
+
+	\spp{Black-capped Chickadee}{Poecile atricapillus}{\rr}
+	% \spp{Mountain Chickadee}{Poecile gambeli}{\rr}
+	\spp{Tufted Titmouse}{Baeolophus bicolor}{\rr}
+
+	\family{Alaudidae}
+
+	\spp{Horned Lark}{Eremophila alpestris}{\rr}
+	\family{Hirundinidae}
+	\spp{Bank Swallow}{Riparia riparia}{\rr}
+	\spp{Tree Swallow}{Tachycineta bicolor}{\rr}
+	\spp{Violet-green Swallow}{Tachycineta thalassina}{\rr}
+	\spp{Northern Rough-winged Swallow}{Stelgidopteryx serripennis}{\rr}
+	\spp{Purple Martin}{Progne subis}{\rr}
+	\spp{Barn Swallow}{Hirundo rustica}{\rr}
+	\spp{Cliff Swallow}{Petrochelidon pyrrhonota}{\rr}
+	% \spp{Cave Swallow}{Petrochelidon fulva}{\rr}
+
+	\family{Regulidae}
+
+	\spp{Ruby-crowned Kinglet}{Corthylio calendula}{\rr}
+	\spp{Golden-crowned Kinglet}{Regulus satrapa}{\rr}
+
+	\family{Bombycillidae}
+
+	% \spp{Bohemian Waxwing}{Bombycilla garrulus}{\rr}
+	\spp{Cedar Waxwing}{Bombycilla cedrorum}{\rr}
+
+	% \family{Ptiliogonatidae}
+	% \spp{Phainopepla}{Phainopepla nitens}{\rr}
+
+	\family{Sittidae}
+
+	\spp{Red-breasted Nuthatch}{Sitta canadensis}{\rr}
+	\spp{White-breasted Nuthatch}{Sitta carolinensis}{\rr}
+	\spp{Pygmy Nuthatch}{Sitta pygmaea}{\rr}
+	% \spp{Brown-headed Nuthatch}{Sitta pusilla}{\rr}
+
+	\family{Certhiidae}
+
+	\spp{Brown Creeper}{Certhia americana}{\rr}
+
+	\family{Polioptilidae}
+
+	\spp{Blue-gray Gnatcatcher}{Polioptila caerulea}{\rr}
+
+	\family{Troglodytidae}
+
+	\spp{Rock Wren}{Salpinctes obsoletus}{\rr}
+	% \spp{Canyon Wren}{Catherpes mexicanus}{\rr}
+	% \spp{Bewick's Wren}{Thryomanes bewickii}{\rr}
+	\spp{Carolina Wren}{Thryothorus ludovicianus}{\rr}
+	\spp{Northern House Wren}{Troglodytes aedon}{\rr}
+	% \spp{Pacific Wren}{Troglodytes pacificus}{\rr}
+	\spp{Winter Wren}{Troglodytes hiemalis}{\rr}
+	\spp{Sedge Wren}{Cistothorus stellaris}{\rr}
+	\spp{Marsh Wren}{Cistothorus palustris}{\rr}
+
+	\family{Mimidae}
+
+	\spp{Gray Catbird}{Dumetella carolinensis}{\rr}
+	% \spp{Curve-billed Thrasher}{Toxostoma curvirostre}{\rr}
+	\spp{Brown Thrasher}{Toxostoma rufum}{\rr}
+	% \spp{Sage Thrasher}{Oreoscoptes montanus}{\rr}
+	\spp{Northern Mockingbird}{Mimus polyglottos}{\rr}
+
+	\family{Sturnidae}
+
+	\spp{European Starling}{Sturnus vulgaris}{\rr}
+
+	% \family{Cinclidae}
+	% \spp{American Dipper}{Cinclus mexicanus}{\rr}
+
+	\family{Turdidae}
+
+	\spp{Eastern Bluebird}{Sialia sialis}{\rr}
+	% \spp{Western Bluebird}{Sialia mexicana}{\rr}
+	\spp{Mountain Bluebird}{Sialia currucoides}{\rr}
+	\spp{Townsend's Solitaire}{Myadestes townsendi}{\rr}
+	\spp{Veery}{Catharus fuscescens}{\rr}
+	\spp{Gray-cheeked Thrush}{Catharus minimus}{\rr}
+	\spp{Swainson's Thrush}{Catharus ustulatus}{\rr}
+	\spp{Hermit Thrush}{Catharus guttatus}{\rr}
+	\spp{Wood Thrush}{Hylocichla mustelina}{\rr}
+	\spp{American Robin}{Turdus migratorius}{\rr}
+	% \spp{Varied Thrush}{Ixoreus naevius}{\rr}
+
+	\family{Passeridae}
+
+	\spp{House Sparrow}{Passer domesticus}{\rr}
+	% \spp{Eurasian Tree Sparrow}{Passer montanus}{\rr}
+
+	\family{Motacillidae}
+
+	\spp{American Pipit}{Anthus rubescens}{\rr}
+	\spp{Sprague's Pipit}{Anthus spragueii}{\rr}
+
+	\family{Fringillidae}
+
+	% \spp{Brambling}{Fringilla montifringilla}{\rr}
+	% \spp{Evening Grosbeak}{Coccothraustes vespertinus}{\rr}
+	% \spp{Pine Grosbeak}{Pinicola enucleator}{\rr}
+	% \spp{Gray-crowned Rosy-Finch}{Leucosticte tephrocotis}{\rr}
+	% \spp{Black Rosy-Finch}{Leucosticte atrata}{\rr}
+	\spp{House Finch}{Haemorhous mexicanus}{\rr}
+	\spp{Purple Finch}{Haemorhous purpureus}{\rr}
+	% \spp{Cassin's Finch}{Haemorhous cassinii}{\rr}
+	% \spp{Redpoll}{Acanthis flammea}{\rr}
+	\spp{Red Crossbill}{Loxia curvirostra}{\rr}
+	% \spp{White-winged Crossbill}{Loxia leucoptera}{\rr}
+	\spp{Pine Siskin}{Spinus pinus}{\rr}
+	\spp{Lesser Goldfinch}{Spinus psaltria}{\rr}
+	\spp{American Goldfinch}{Spinus tristis}{\rr}
+
+	\family{Calcariidae}
+
+	\spp{Lapland Longspur}{Calcarius lapponicus}{\rr}
+	\spp{Chestnut-collared Longspur}{Calcarius ornatus}{\rr}
+	\spp{Smith's Longspur}{Calcarius pictus}{\rr}
+	\spp{Thick-billed Longspur}{Rhynchophanes mccownii}{\rr}
+	\spp{Snow Bunting}{Plectrophenax nivalis}{\rr}
+
+	\family{Passerellidae}
+
+	\spp{Cassin's Sparrow}{Peucaea cassinii}{\rr}
+	\spp{Grasshopper Sparrow}{Ammodramus savannarum}{\rr}
+	% \spp{Black-throated Sparrow}{Amphispiza bilineata}{\rr}
+	\spp{Lark Sparrow}{Chondestes grammacus}{\rr}
+	\spp{Lark Bunting}{Calamospiza melanocorys}{\rr}
+	\spp{Chipping Sparrow}{Spizella passerina}{\rr}
+	\spp{Clay-colored Sparrow}{Spizella pallida}{\rr}
+	\spp{Field Sparrow}{Spizella pusilla}{\rr}
+	\spp{Brewer's Sparrow}{Spizella breweri}{\rr}
+	\spp{Fox Sparrow}{Passerella iliaca}{\rr}
+	\spp{American Tree Sparrow}{Spizelloides arborea}{\rr}
+	\spp{Dark-eyed Junco}{Junco hyemalis}{\rr}
+	\spp{White-crowned Sparrow}{Zonotrichia leucophrys}{\rr}
+	% \spp{Golden-crowned Sparrow}{Zonotrichia atricapilla}{\rr}
+	\spp{Harris's Sparrow}{Zonotrichia querula}{\rr}
+	\spp{White-throated Sparrow}{Zonotrichia albicollis}{\rr}
+	% \spp{Sagebrush Sparrow}{Artemisiospiza nevadensis}{\rr}
+	\spp{Vesper Sparrow}{Pooecetes gramineus}{\rr}
+	\spp{LeConte's Sparrow}{Ammospiza leconteii}{\rr}
+	\spp{Nelson's Sparrow}{Ammospiza nelsoni}{\rr}
+	% \spp{Baird's Sparrow}{Centronyx bairdii}{\rr}
+	\spp{Henslow's Sparrow}{Centronyx henslowii}{\rr}
+	\spp{Savannah Sparrow}{Passerculus sandwichensis}{\rr}
+	\spp{Song Sparrow}{Melospiza melodia}{\rr}
+	\spp{Lincoln's Sparrow}{Melospiza lincolnii}{\rr}
+	\spp{Swamp Sparrow}{Melospiza georgiana}{\rr}
+	\spp{Green-tailed Towhee}{Pipilo chlorurus}{\rr}
+	\spp{Spotted Towhee}{Pipilo maculatus}{\rr}
+	\spp{Eastern Towhee}{Pipilo erythrophthalmus}{\rr}
+
+	\family{Icteriidae}
+
+	\spp{Yellow-breasted Chat}{Icteria virens}{\rr}
+
+	\family{Icteridae}
+
+	\spp{Yellow-headed Blackbird}{Xanthocephalus xanthocephalus}{\rr}
+	\spp{Bobolink}{Dolichonyx oryzivorus}{\rr}
+	\spp{Eastern Meadowlark}{Sturnella magna}{\rr}
+	\spp{Western Meadowlark}{Sturnella neglecta}{\rr}
+	\spp{Orchard Oriole}{Icterus spurius}{\rr}
+	% \spp{Hooded Oriole}{Icterus cucullatus}{\rr}
+	\spp{Bullock's Oriole}{Icterus bullockii}{\rr}
+	\spp{Baltimore Oriole}{Icterus galbula}{\rr}
+	% \spp{Scott's Oriole}{Icterus parisorum}{\rr}
+	\spp{Red-winged Blackbird}{Agelaius phoeniceus}{\rr}
+	\spp{Brown-headed Cowbird}{Molothrus ater}{\rr}
+	\spp{Rusty Blackbird}{Euphagus carolinus}{\rr}
+	\spp{Brewer's Blackbird}{Euphagus cyanocephalus}{\rr}
+	\spp{Common Grackle}{Quiscalus quiscula}{\rr}
+	\spp{Great-tailed Grackle}{Quiscalus mexicanus}{\rr}
+
+	\family{Parulidae}
+
+	\spp{Ovenbird}{Seiurus aurocapilla}{\rr}
+	% \spp{Worm-eating Warbler}{Helmitheros vermivorum}{\rr}
+	\spp{Louisiana Waterthrush}{Parkesia motacilla}{\rr}
+	\spp{Northern Waterthrush}{Parkesia noveboracensis}{\rr}
+	\spp{Golden-winged Warbler}{Vermivora chrysoptera}{\rr}
+	\spp{Blue-winged Warbler}{Vermivora cyanoptera}{\rr}
+	\spp{Black-and-white Warbler}{Mniotilta varia}{\rr}
+	\spp{Prothonotary Warbler}{Protonotaria citrea}{\rr}
+	% \spp{Swainson's Warbler}{Limnothlypis swainsonii}{\rr}
+	\spp{Tennessee Warbler}{Leiothlypis peregrina}{\rr}
+	\spp{Orange-crowned Warbler}{Leiothlypis celata}{\rr}
+	\spp{Nashville Warbler}{Leiothlypis ruficapilla}{\rr}
+	% \spp{Virginia's Warbler}{Leiothlypis virginiae}{\rr}
+	\spp{Connecticut Warbler}{Oporornis agilis}{\rr}
+	\spp{MacGillivray's Warbler}{Geothlypis tolmiei}{\rr}
+	\spp{Mourning Warbler}{Geothlypis philadelphia}{\rr}
+	\spp{Kentucky Warbler}{Geothlypis formosa}{\rr}
+	\spp{Common Yellowthroat}{Geothlypis trichas}{\rr}
+	% \spp{Hooded Warbler}{Setophaga citrina}{\rr}
+	\spp{American Redstart}{Setophaga ruticilla}{\rr}
+	% \spp{Cape May Warbler}{Setophaga tigrina}{\rr}
+	% \spp{Cerulean Warbler}{Setophaga cerulea}{\rr}
+	\spp{Northern Parula}{Setophaga americana}{\rr}
+	\spp{Magnolia Warbler}{Setophaga magnolia}{\rr}
+	\spp{Bay-breasted Warbler}{Setophaga castanea}{\rr}
+	\spp{Blackburnian Warbler}{Setophaga fusca}{\rr}
+	\spp{Yellow Warbler}{Setophaga petechia}{\rr}
+	\spp{Chestnut-sided Warbler}{Setophaga pensylvanica}{\rr}
+	\spp{Blackpoll Warbler}{Setophaga striata}{\rr}
+	% \spp{Black-throated Blue Warbler}{Setophaga caerulescens}{\rr}
+	\spp{Palm Warbler}{Setophaga palmarum}{\rr}
+	% \spp{Pine Warbler}{Setophaga pinus}{\rr}
+	\spp{Yellow-rumped Warbler}{Setophaga coronata}{\rr}
+	\spp{Yellow-throated Warbler}{Setophaga dominica}{\rr}
+	% \spp{Prairie Warbler}{Setophaga discolor}{\rr}
+	% \spp{Grace's Warbler}{Setophaga graciae}{\rr}
+	% \spp{Black-throated Gray Warbler}{Setophaga nigrescens}{\rr}
+	\spp{Townsend's Warbler}{Setophaga townsendi}{\rr}
+	% \spp{Hermit Warbler}{Setophaga occidentalis}{\rr}
+	\spp{Black-throated Green Warbler}{Setophaga virens}{\rr}
+	\spp{Canada Warbler}{Cardellina canadensis}{\rr}
+	\spp{Wilson's Warbler}{Cardellina pusilla}{\rr}
+
+	\family{Cardinalidae}
+
+	% \spp{Hepatic Tanager}{Piranga flava}{\rr}
+	\spp{Summer Tanager}{Piranga rubra}{\rr}
+	\spp{Scarlet Tanager}{Piranga olivacea}{\rr}
+	\spp{Western Tanager}{Piranga ludoviciana}{\rr}
+	\spp{Northern Cardinal}{Cardinalis cardinalis}{\rr}
+	\spp{Rose-breasted Grosbeak}{Pheucticus ludovicianus}{\rr}
+	\spp{Black-headed Grosbeak}{Pheucticus melanocephalus}{\rr}
+	\spp{Blue Grosbeak}{Passerina caerulea}{\rr}
+	\spp{Lazuli Bunting}{Passerina amoena}{\rr}
+	\spp{Indigo Bunting}{Passerina cyanea}{\rr}
+	% \spp{Painted Bunting}{Passerina ciris}{\rr}
+	\spp{Dickcissel}{Spiza americana}{\rr}
+
+	\section*{ACKNOWLEDGMENTS}
+	
+	Thanks to all those who bird Nebraska for improving our knowledge of this state! If you see any omissions or corrections, please reach out to the report compiler.
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%                      End author content                           %%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	%\bibliographystyle{plainurl}
+	%\bibliography{Bibliography}
+	
+\end{document}

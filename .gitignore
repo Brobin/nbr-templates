@@ -1,0 +1,8 @@
+*.log
+*.aux
+*.gz
+*.blg
+fieldreport.pdf
+nbr_article.pdf
+.DS_Store
+*:Zone.Indentifier
