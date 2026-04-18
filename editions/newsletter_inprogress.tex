@@ -38,6 +38,46 @@
 \setlength\oddsidemargin{-30pt}
 \setlength\evensidemargin{-30pt}
 
+% references
+
+% packages for references
+\usepackage[backend=biber, 
+	%%%% use below line for numeric citations %%%%%			style=numeric-comp, % style compresses, orders in text citations
+	style=authoryear-comp, % author year citation style
+	dashed = false, %doesnt dash the same author in reference list
+	sorting=nyt, % within bibliography by name, year, then title
+	maxbibnames=99,% prints up to 99 names in bibliography
+	mincitenames = 1,
+	maxcitenames = 2,
+	uniquename = false,
+	uniquelist = false]{biblatex} %reduces number of possible in text citations to a max of 2, otherwise does et al.
+\addbibresource{newsletter.bib}
+
+\AtEveryBibitem{
+	\clearfield{url}
+	\clearfield{issn}
+	\clearfield{urlyear}
+	\clearlist{language}
+	\clearfield{month}
+	\clearfield{note}
+	\clearname{editor}
+	\clearfield{eprint}
+}
+
+% remove "in" from citations
+\renewbibmacro{in:}{}
+
+% remove "pages" from bibliography
+\DefineBibliographyStrings{english}{%
+	page             = {},
+	pages            = {},
+} 
+
+% add ":" before pages
+\renewcommand{\postnotedelim}{\addcolon}
+
+\setlength{\parindent}{36pt}
+
 % remove double spacing after periods
 \frenchspacing
 
@@ -57,7 +97,12 @@
 \usepackage[pdfpagemode=FullScreen,
 			colorlinks=true,
 			linkcolor=blue]{hyperref}	% links and pdf behaviour
-
+\hypersetup{colorlinks = true, % make links different color
+	pdfcreator         = {Jacob C. Cooper}, % document creator
+	linkcolor          = black, % links within document "hidden"
+	citecolor          = blue, % links to citations blue
+	urlcolor           = blue} % links to web pages blue
+	
 % Customize (header and) footer
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -185,7 +230,7 @@
 	\begin{enumerate}[resume]
 		\item \textbf{Limpkin \textit{Araumus guarana}}
 	\end{enumerate}
-	A pick from Joel G. Jorgensen's `off the wall' picks, a large multi-year irruption of Limpkin from the southeast resulted in Nebraska's first record, as well as double-digit records from Kansas and other nearby states that previously had no records of Limpkin. Research shows that many of these wandering individuals are second year birds with irruptions driven by droughts, and as southeastern populations continue to increase with spreading apple snail (\textit{Pomacea} sp.) populations, there will likely be more Limpkin in Nebraska in the future.
+	A pick from Joel G. Jorgensen's `off the wall' picks, a large multi-year irruption of Limpkin from the southeast resulted in Nebraska's first record, as well as double-digit records from Kansas and other nearby states that previously had no records of Limpkin. Research shows that many of these wandering individuals are second year birds with irruptions driven by droughts, and as southeastern populations continue to increase with spreading apple snail (\textit{Pomacea} sp.) populations, there will likely be more Limpkin in Nebraska in the future \parencite{Mutchler02102025}.
 	
 	\begin{enumerate}[resume]
 		\item \textbf{Broad-billed Hummingbird \textit{Cynanthus latirostris}}
@@ -204,64 +249,81 @@
 	\end{enumerate}
 	Formerly the common northern whistling-duck, Fulvous Whistling-Duck has not shown nearly the same ability to spread northwards as its congener, the Black-bellied Whistling-Duck. Despite this, irruptions still do occur, and a flock of these birds in \textit{Lancaster} garnered the first record for the state. Another bird was taken by a hunter in western Nebraska, and, given that the species has nested as far north as Illinois, it seems likely we will be getting this species again.
 	
+\end{multicols}
 	\vspace{0.5cm}
 	\NewsItem{Surprise finds}
+	While likely discussed, the following species were not in folks' top tens for predicted next species in Nebraska--and it seems very unlikely that Nebraska will get a second record of several of these anytime soon!
+	\begin{multicols}{2}
+	\begin{enumerate}[resume]
+		\item \textbf{Couch’s Kingbird \textit{Tyrannus couchii}}
+	\end{enumerate}
+	Folks can search their whole lives and not find a first state record for Nebraska, but luck smiled upon Christine Nelson when the first state record of this locally distributed kingbird showed up on her front deck near North Platte!
 	
 	\begin{enumerate}[resume]
-		\item Couch’s Kingbird
-	\end{enumerate}
-	\begin{enumerate}[resume]
-		\item Mexican Duck
+		\item \textbf{Mexican Duck \textit{Anas diazi}}
 	\end{enumerate}
 	A species likely missing from predictions solely because it wasn't recognized as a species, this taxon has now been definitely recorded from western Nebraska. It seems likely that we will get more records in the future, but possible individuals should be carefully scrutinized for hybrid characters.
 	
 	\begin{enumerate}[resume]
-		\item Western Gull
+		\item \textbf{Western Gull \textit{Larus occidentalis}}
 	\end{enumerate}
+	On the same day as Nebraska's first Westerb Bluebirds was Nebraska's first record of this stunning gull. While not wholly unexpected, it is one of the rare vagrant gulls in interior and eastern North America.
+	
 	\begin{enumerate}[resume]
-		\item Black Vulture
+		\item \textbf{Black Vulture \textit{Coragyps atratus}}
 		\end{enumerate}
+		A vagrant of this vulture is not wholly surprising given records in other far-flung regions of North America, and while future records are a certainty, it'll probably be a long wait before we get another in the state.
+		
 		\begin{enumerate}[resume]
-		\item Great Kiskadee
+		\item \textbf{Great Kiskadee \textit{Pitangus sulphuratus}}
 		\end{enumerate}
+		Records in the interior of North America have increased in years, and South Dakota, Kansas, and Colorado now all have records of this stunning tyrant flycatcher.
+		
 		\begin{enumerate}[resume]
-		\item Swainson’s Warbler
+		\item \textbf{Swainson’s Warbler \textit{Limnothlypis swainsoni}}
 		\end{enumerate}
+		
+		
 		\begin{enumerate}[resume]
-		\item Pacific Wren
+		\item \textbf{Pacific Wren \textit{Troglodytes pacificus}}
 		\end{enumerate}
+		Another bird likely overlooked because it was considered conspecific with what the Europeans know as \textit{the} wren, recent taxonomic shuffles resulted in both the Winter Wren \textit{T. hiemalis} and the Pacific Wren being split from the Eurasian Wren \textit{T. troglodytes}, and this species was soon thereafter found in Nebraska. A classic example of why we should continue to document and pay attention to distinctive regional subspecies in Nebraska!
 		\begin{enumerate}[resume]
 		\item Brown Booby
 	\end{enumerate}
+	\end{multicols}
 	
 	\NewsItem{Predictions yet to show}
+	The following species were predicted in past years, but have yet to show in Nebraska. 
 	
+	\begin{multicols}{3}
+		
 	\begin{itemize}
-		\item Slaty-backed Gull
-		\item Long-billed Murrelet
-		\item Rivoli’s Hummingbird
-		\item Lesser Nighthawk
-		\item Black-backed Woodpecker
-		\item Woodhouse’s Scrub-Jay
-		\item Painted Whitestart
-		\item Fork-tailed Flycatcher
-		\item Ivory Gull
-		\item Flammulated Owl
-		\item Gull-billed Tern
-		\item Allen’s Hummingbird
-		\item Bushtit
-		\item Mexican Violetear
-		\item Heermann’s Gull
-		\item Barnacle Goose
-		\item Gray Vireo
-		\item Mexican Whip-poor-will
-		\item Rufous-crowned Sparrow
-		\item Purple Sandpiper
-		\item Juniper Titmouse
-		\item White Wagtail
-		\item Arctic Loon
-		\item Siberian Accentor
-		\item Greater Roadrunner
+		\item \textbf{Slaty-backed Gull \\ \textit{Larus schistisagus}}
+		\item \textbf{Long-billed Murrelet \\ \textit{Syntliboramphus }}
+		\item \textbf{Rivoli’s Hummingbird \\ \textit{Eugenes fulgens}}
+		\item \textbf{Lesser Nighthawk \\ \textit{Choreiles acutipennis}}
+		\item \textbf{Black-backed Woodpecker \\ \textit{Picoides dorsalis}}
+		\item \textbf{Woodhouse’s Scrub-Jay \\ \textit{Aphelocoma woodhouseii}}
+		\item \textbf{Painted Whitestart \\ \textit{Myioborus pictus}}
+		\item \textbf{Fork-tailed Flycatcher \\ \textit{Tyrannus savanna}}
+		\item \textbf{Ivory Gull \\ \textit{Pagophila eburnea}}
+		\item \textbf{Flammulated Owl \\ \textit{Psiloscops flammeolus}}
+		\item \textbf{Gull-billed Tern \\ \textit{Gelochelidon niloctica}}
+		\item \textbf{Allen’s Hummingbird \\ \textit{Selasphorus sasin}}
+		\item \textbf{Bushtit \\ \textit{Psaltriparus minimus}}
+		\item \textbf{Mexican Violetear}
+		\item \textbf{Heermann’s Gull \\ \textit{Larus heermannii}}
+		\item \textbf{Barnacle Goose \\ \textit{Branta leucopsis}}
+		\item \textbf{Gray Vireo \\ \textit{Vireo vicinior}}
+		\item \textbf{Mexican Whip-poor-will \\ \textit{Caprimulgus arizonae}}
+		\item \textbf{Rufous-crowned Sparrow}
+		\item \textbf{Purple Sandpiper}
+		\item \textbf{Juniper Titmouse \\ \textit{Baeolophus ridgwayi}}
+		\item \textbf{White Wagtail}
+		\item \textbf{Arctic Loon \\ \textit{Gavia arctica}}
+		\item \textbf{Siberian Accentor}
+		\item \textbf{Greater Roadrunner \\ \textit{Geococcyx californianus}}
 	\end{itemize}
 	
 	
@@ -276,18 +338,21 @@
 		\item \textbf{Barnacle Goose \textit{Branta leucopsis}}
 	\end{itemize}
 	A hybrid specimen exists for Nebraska, and confirmed records exist for Colorado. Given population increases in Iceland, it is likely just a matter of time before this species is confirmed in the state.
+	
 	\begin{itemize}
 		\item \textbf{European Golden-Plover \textit{Pluvialis apricaria}}
 	\end{itemize}
 	A record from New Mexico had to have crossed the entire plains and easily could have passed through Nebraska.
+	
 	\begin{itemize}
 		\item \textbf{Wilson’s Plover}
 	\end{itemize}
+	With records from northwest Missouri and South Dakota it seems very likely that this species has passed through Nebraska at some point. This species has shown up in the Great Lakes region multiple times, and seems a likely candidate as a future Nebraska vagrant.
 	
 	\begin{itemize}
 		\item \textbf{Eurasian Whimbrel}
 	\end{itemize}
-	Records from the Gulf Coast are of birds that likely cross the central Great Plains during migration.
+	A record from the Gulf Coast is of a bird that likely crossed the central Great Plains during migration. Whimbrels should be checked carefully in Nebraska, especially if outside of the normal migration window.
 	
 	\begin{itemize}
 		\item \textbf{Spotted Redshank}
@@ -297,9 +362,13 @@
 	\begin{itemize}
 		\item \textbf{Little Stint}
 	\end{itemize}
+	Perhaps a bit of a stretch to say it has probably been here, but records from New Mexico, North Dakota, and Tennessee show it is entirely possible it has occurred in Nebraska!
+	
 	\begin{itemize}
 		\item \textbf{Red-necked Stint}
 	\end{itemize}
+	Records from Texas and Kansas are of birds that likely passed through Nebraska airspace at some point.
+	
 	\begin{itemize}
 		\item \textbf{Purple Sandpiper}
 	\end{itemize}
@@ -308,9 +377,13 @@
 	\begin{itemize}
 		\item \textbf{Slaty-backed Gull \textit{Larus schistisagus}}
 	\end{itemize}
+	
+	
 	\begin{itemize}
 		\item \textbf{Flammulated Owl \textit{Psiloscops flammeolus}}
 	\end{itemize}
+	
+	
 	\begin{itemize}
 		\item \textbf{Mexican Violetear}
 	\end{itemize}
@@ -329,10 +402,12 @@
 		\item Tropical Kingbird
 	\end{itemize}
 	\begin{itemize}
-		\item Thick-billed Kingbird
+		\item \textbf{Thick-billed Kingbird \textit{Tyrannus crassirostris}}
 	\end{itemize}
+	This stunning kingbird has become a much more regular vagrant north of its typical haunts in the Sierra Madre Occidental, and a record from North Dakota highlights that this bird may have occurred in Nebraska already.
+	
 	\begin{itemize}
-		\item \textbf{Orange-billed Nightingale-Thrush}
+		\item \textbf{Orange-billed Nightingale-Thrush \\ \textit{Catharus aurantiirostris}}
 	\end{itemize}
 	An incredible record of this species from the Black Hills of South Dakota indicates that this bird was likely a flyover in the Nebraska Panhandle. It seems unlikely that this bird will show up in Nebraska, but it is becoming more regular in US southwest and thus we may still get our \textit{Catharus} redemption arc.
 	
@@ -355,14 +430,19 @@
 		\item \textbf{Pyrrhuloxia \textit{Cardinalis sinuatus}}
 	\end{itemize}
 	North America's `desert cardinal' has been recorded several times in Colorado and Kansas, and a recent record from North Dakota indicates that this species could easily reach Nebraska, if it hasn't already.
+\end{multicols}
 	
 	\vspace{0.5cm}
 	\NewsItem{What do we think will be next?}
-	
-	Tobin Brown
+	\begin{multicols}{2}
+	\begin{itemize}
+		\item \textbf{Tobin Brown}
+	\end{itemize}
 	Tobin is the current big year record holder.
 	
 \end{multicols}
+
+\printbibliography[heading=bibintoc,title={References}]
 
 % -----
 
